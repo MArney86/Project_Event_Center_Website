@@ -1,0 +1,41 @@
+:root {
+    --nav-background: #025c5c;
+}
+.heading {
+    background-color: darkslategray;
+    color:bisque;
+}
+
+.headlogo {
+    display: inline;
+    width: 150px;
+    height: 150px;
+}
+
+.heading h1 {
+    display: inline;
+    text-align: right;
+}
+
+.navbar {
+    background-color: var(--nav-background);
+    padding: 20;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navitem {
+    display: inline;
+    background-color:#013535;
+    transition: background-color 0.7s ease;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navitem:hover {
+    background-color:lightgray;
+    color: #013535;
+}
