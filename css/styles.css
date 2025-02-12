@@ -1,41 +1,89 @@
-:root {
-    --nav-background: #025c5c;
-}
-.heading {
+/*<header>*/
+header {
     background-color: darkslategray;
     color:bisque;
 }
 
-.headlogo {
+.headerlogo {
     display: inline;
     width: 150px;
     height: 150px;
 }
 
-.heading h1 {
+header h1 {
     display: inline;
     text-align: right;
 }
 
-.navbar {
-    background-color: var(--nav-background);
-    padding: 20;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #025c5c;
 }
 
-.navbar ul {
-    list-style-type: none;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5px
 }
 
 .navitem {
-    display: inline;
     background-color:#013535;
     transition: background-color 0.7s ease;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+body {
+    background-color: black;
+    color:blanchedalmond;
+    font-family: Helvetica;
+}
+
+.navitem a{
+    text-decoration: none;
+    color: white;
 }
 
 .navitem:hover {
     background-color:lightgray;
     color: #013535;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    /*hide nav links at smaller screen width*/
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    /*display hamburger*/
+    .menu-icon{
+        display:block;
+    }
+
+    /*when checkbox checked, show menu*/
+    #menu-toggle:checked + label + ul {
+        display: flex;
+    }
+
+    .navitem a{
+        margin: 10px 0;
+    }
 }
