@@ -2,6 +2,7 @@
 header {
     background-color: darkslategray;
     color:bisque;
+    font-size: large;
 }
 
 .headerlogo {
@@ -10,7 +11,7 @@ header {
     height: 150px;
 }
 
-header h1 {
+header h1{
     display: inline;
     text-align: right;
 }
@@ -25,7 +26,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 5px
+    gap: 8px;
 }
 
 .navitem {
@@ -33,7 +34,7 @@ nav ul {
     transition: background-color 0.7s ease;
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -98,6 +99,22 @@ body {
 
 }
 
+.welcome {
+    text-align: center;
+    background-color: rgba(95, 89, 128, 0.425);
+    color:bisque;
+    font-size: medium;
+}
+
+.notification{
+    color: red;
+}
+
+.about {
+    background-color: rgba(95, 89, 128, 0.425);
+    color:bisque;
+}
+
 .events {
     margin-top: 20px;
     padding: 40px 20px;
@@ -106,12 +123,16 @@ body {
     color: antiquewhite;
 }
 
+.feat-event{
+    background-color: #025c5c;
+}
+
 .event {
-    background-color: grey;
+    background-color: rgba(47, 138, 100, 0.527);
     margin-top: 20px;
     padding: 40px 20px;
     border-radius: 15px;
-    border: black 1px solid;
+    border: grey 1px solid;
     max-width: 300px;
     color: white;
 }
