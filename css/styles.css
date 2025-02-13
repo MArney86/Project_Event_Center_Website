@@ -86,4 +86,46 @@ body {
     .navitem a{
         margin: 10px 0;
     }
+
+    .event-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero {
+    background-color: dimgrey;
+    padding: 10px;
+
+}
+
+.events {
+    margin-top: 20px;
+    padding: 40px 20px;
+    border-radius: 25px;
+    background-color:rgb(18, 48, 48);
+    color: antiquewhite;
+}
+
+.event {
+    background-color: grey;
+    margin-top: 20px;
+    padding: 40px 20px;
+    border-radius: 15px;
+    border: black 1px solid;
+    max-width: 300px;
+    color: white;
+}
+
+.event img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
 }
