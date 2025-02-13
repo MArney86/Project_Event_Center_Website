@@ -116,6 +116,7 @@ body {
 }
 
 .events {
+    justify-content: center;
     margin-top: 20px;
     padding: 40px 20px;
     border-radius: 25px;
@@ -124,6 +125,7 @@ body {
 }
 
 .feat-event{
+    justify-content: center;
     background-color: #025c5c;
 }
 
@@ -144,9 +146,18 @@ body {
 
 }
 
+.feat-event img {
+    width: 100%;
+}
+
 .event-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 
+}
+
+.event-grid a {
+    color:rgb(250, 238, 168);
+    text-decoration: none;
 }
