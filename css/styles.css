@@ -2,20 +2,23 @@
 header {
     background-color: darkslategray;
     color:bisque;
-    font-size: large;
+    font-size: medium;
 }
 
+/*header logo*/
 .headerlogo {
     display: inline;
     width: 150px;
     height: 150px;
 }
 
+/*header h1 text*/
 header h1{
     display: inline;
     text-align: right;
 }
 
+/*navigation bar section*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -23,12 +26,14 @@ nav {
     background-color: #025c5c;
 }
 
+/*un-ordered lists under navigation bar*/
 nav ul {
     list-style: none;
     display: flex;
     gap: 8px;
 }
 
+/*navigation bar items*/
 .navitem {
     background-color:#013535;
     transition: background-color 0.7s ease;
@@ -39,22 +44,26 @@ nav ul {
     padding-right: 10px;
 }
 
+/*main body settings*/
 body {
     background-color: black;
     color:blanchedalmond;
     font-family: Helvetica;
 }
 
+/*links within navigation bar items*/
 .navitem a{
     text-decoration: none;
     color: white;
 }
 
+/*action when hovering over navigation bar items*/
 .navitem:hover {
     background-color:lightgray;
     color: #013535;
 }
 
+/*menu icon for responsive navigation bar*/
 .menu-icon {
     display: none;
     font-size: 30px;
@@ -62,10 +71,12 @@ body {
     cursor: pointer;
 }
 
+/*settings to not display navigation bar menu toggle*/
 #menu-toggle {
     display: none;
 }
 
+/*screen size media query for responsive layout updating*/
 @media screen and (max-width: 768px) {
     /*hide nav links at smaller screen width*/
     nav ul {
@@ -84,21 +95,24 @@ body {
         display: flex;
     }
 
+    /*shrink fontsize*/
     .navitem a{
         margin: 10px 0;
     }
-
+    /*only display one grid column per row*/
     .event-grid{
         grid-template-columns: 1fr;
     }
 }
 
+/*hero section styling*/
 .hero {
     background-color: dimgrey;
     padding: 10px;
 
 }
 
+/*welcome section styling*/
 .welcome {
     text-align: center;
     background-color: rgba(95, 89, 128, 0.425);
@@ -106,15 +120,18 @@ body {
     font-size: medium;
 }
 
+/*styling to make notification class text red*/
 .notification{
     color: red;
 }
 
+/*about section styling*/
 .about {
     background-color: rgba(95, 89, 128, 0.425);
     color:bisque;
 }
 
+/*event section styling*/
 .events {
     justify-content: center;
     margin-top: 20px;
@@ -124,11 +141,13 @@ body {
     color: antiquewhite;
 }
 
+/*featured event item styling*/
 .feat-event{
     justify-content: center;
     background-color: #025c5c;
 }
 
+/*event item styling*/
 .event {
     background-color: rgba(47, 138, 100, 0.527);
     margin-top: 20px;
@@ -139,6 +158,7 @@ body {
     color: white;
 }
 
+/*image for event items styling*/
 .event img {
     width: 100%;
     border-radius: 8px;
@@ -146,10 +166,12 @@ body {
 
 }
 
+/*image for featured event item styling*/
 .feat-event img {
     width: 100%;
 }
 
+/*event grid styling*/
 .event-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -157,7 +179,19 @@ body {
 
 }
 
+/*styling for links within the event grid*/
 .event-grid a {
     color:rgb(250, 238, 168);
     text-decoration: none;
+}
+
+table, td {
+    border-color: rgb(203, 252, 236);
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.table-grid {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
 }
