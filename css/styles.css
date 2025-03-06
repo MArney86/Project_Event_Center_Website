@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /*<header>*/
 header {
     background-color: darkslategray;
@@ -46,6 +50,7 @@ nav ul {
 
 /*main body settings*/
 body {
+
     background-color: black;
     color:blanchedalmond;
     font-family: Helvetica;
@@ -76,7 +81,7 @@ body {
     display: none;
 }
 
-/*screen size media query for responsive layout updating*/
+/*screen size media query for responsive layout updating with screens smaller than 768 pixels*/
 @media screen and (max-width: 768px) {
     /*hide nav links at smaller screen width*/
     nav ul {
@@ -105,11 +110,41 @@ body {
     }
 }
 
+/*screen size media query for responsive layout updating with screens smaller than 600 pixels*/
+@media screen and (max-width: 600px) {
+    /*enable flex wrap to change layout of tables for menu on smaller screens*/
+    .menu-items .row {
+        flex-wrap: wrap;
+    }
+
+    /*change menu to one table wide with smaller screen width*/
+    .menu-items .column {
+        flex: 100%;
+    }
+    
+
+    /*changes the columns in the contact menu to display one on top of each other*/
+    .col25, .col75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
 /*hero section styling*/
 .hero {
+    position: relative;
     background-color: dimgrey;
     padding: 10px;
+    text-align: center;
+}
 
+.hero-text {
+    font-size: 4em;
+    color:rgb(255, 0, 0);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-60%, -50%);
 }
 
 /*welcome section styling*/
@@ -129,6 +164,8 @@ body {
 .about {
     background-color: rgba(95, 89, 128, 0.425);
     color:bisque;
+    font-size: 16px;
+    padding: 12px;
 }
 
 /*event section styling*/
@@ -143,6 +180,7 @@ body {
 
 /*featured event item styling*/
 .feat-event{
+    font-family:Tahoma;
     justify-content: center;
     background-color: #025c5c;
 }
@@ -156,6 +194,7 @@ body {
     border: grey 1px solid;
     max-width: 300px;
     color: white;
+    font-family:Tahoma;
 }
 
 /*image for event items styling*/
@@ -185,13 +224,170 @@ body {
     text-decoration: none;
 }
 
-table, td {
-    border-color: rgb(203, 252, 236);
-    border: 1px solid;
-    border-collapse: collapse;
+/*styling for menu section*/
+.menu-items {
+    background-color:rgb(18, 48, 48);
+    color:darkkhaki;
 }
 
-.table-grid {
-    display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
+/*menu table styling*/
+.menu-items table {
+    display: table;
+    table-layout: fixed;
+    border: 1px black groove;
+    border-radius: 10px;
+    border-collapse: collapse;
+    text-align: end;
+    width: 100%;
 }
+
+/*selector to change color of every other row in menu table*/
+.menu-items table tr:nth-child(even) {
+    background-color: cornflowerblue;
+    color:rgb(0, 1, 15);
+}
+
+/* menu table cells*/
+.menu-items td {
+    display: table-cell;
+    border-color: rgb(255, 249, 241);
+    border: 1px solid;
+    width: 33%;
+}
+
+/*images in menu table cells*/
+.menu-items td img {
+    height: 100px;
+}
+
+/*hovering over menu table images*/
+.menu-items table tr:hover {
+    background-color: fuchsia;
+    color:black;
+}
+
+/*styling for menu table headings*/
+.menu-items th {
+    background-color: white;
+    color:rgb(0, 1, 15);
+    font-size:medium;
+    text-align: center;
+}
+
+/*flex-row for displaying menu tables next to each other*/
+.menu-items .row {
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+}
+
+/*flex columns for displaying menu tables next to each other*/
+.menu-item .column {
+    flex: 50%;
+    padding: 5px;
+    margin:10px;
+}
+
+/*border rounding for menu tables*/
+.head-left {
+    border-top-left-radius: 10px;
+}
+
+/*border rounding for menu tables*/
+.head-right {
+    border-top-right-radius: 10px;
+}
+
+/*border rounding for menu tables*/
+.bot-left{
+    border-bottom-left-radius: 10px;
+}
+
+/*border rounding for menu tables*/
+.bot-right {
+    border-bottom-right-radius: 10px;
+}
+
+/*styling for location section on section page*/
+.location {
+    background-color: #013535;
+    text-align: center;
+}
+
+/*styling for images in location section*/
+.location img{
+    border-radius: 10px;
+    border: 1px black solid;
+}
+
+/*contact form specific styling*/
+section .comment-form {
+    font-family: Calibri;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*styling to change the appearance of the form section of the contact page*/
+.form-deco {
+    background-color: rgb(0, 24, 12);
+    padding: 20px 20px 50px 20px;
+    font-size: 16px;
+    color:cyan;
+    border-color: aqua;
+    border-radius: 5px;
+}
+
+/*styling for the inputs of the contact form*/
+form input[type=text], input[type=email], textarea{
+   padding: 10px;
+   border: 2px solid cyan;
+   border-radius: 8px;
+   resize: vertical;
+}
+
+/*styling for contact form labels*/
+label {
+    padding: 12px 12px 12px 0px;
+    display: inline-block;
+}
+
+/*submit button styling*/
+input[type=submit] {
+    background-color: #04AA60;
+    color: cyan;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+
+/*submit button hover effect*/
+input[type=submit]:hover {
+    background-color: cyan;
+    color: #04AA60;
+}
+
+/*column for labels for contact form*/
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 5px;
+}
+
+/*column for inputs for contact form*/
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 5px;
+}
+
+/*clear floats after the columns*/
+.contact-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

@@ -3,10 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About the Community Concert Center</title>
+        <title>Menus for the Community Concert Center</title>
         <link rel="stylesheet" href="css/styles.css">
+         <!--google fonts linking and styling-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?&family=Mulish&family=Exo+2:ital,wght@0,100..900;1,100..900" rel="stylesheet">
         <style>
-            
+            header {
+                font-family: Mulish;
+            }
+
+            .welcome {
+                font-family: "Exo 2";
+            }
+
+            .about {
+                font-family: "Exo 2";
+            }
+
+            td {
+                font-family: Mulish;
+            }
         </style>
     </head>
     <body>
@@ -14,6 +32,7 @@
             <!--Header with welcome message and logo and responsive navbar-->
             <a href="index.html"><img class="headerlogo" src="images/logo/330x330_trans.png"></a>
             <h1>Food and Drink Menu for Community Concert Center</h1>
+            <!--Navigation bar with responsive resizing based on screensize-->
             <nav>
                 <!--check box and label for menu toggling-->
                 <input type="checkbox" id="menu-toggle">
@@ -28,76 +47,121 @@
             </nav>
         </header>
         <main>
-            <section class="hero">
-                <img src="images/hero/rawImage.jpg" alt="Wide image of a concert from within the audience">
+            <!--small description of page content-->
+            <section class="about">
+                Here is a table of our general food and beverage offerings for events.
+                <p class="notification">Please contact us for more specific catering options and providers.</p>
             </section>
+
+            <!--grid section that holds the actual menu item tables for responsive resizing-->
             <section class="menu-items">
-                <table class="menu">
-                    <tr>
-                        <th></th>
-                        <th>Appetizers</th>
-                        <th></th>
-                    </tr>
-                        <tr>
-                            <td>Mozzarella Sticks</td>
-                            <td>6.99</td>
-                            <td><img src="images/menu/apps/mozz.jpg"></td>                        
-                        </tr>
-                        <tr>
-                            <td>Nachos</td>
-                            <td>5.99</td>
-                            <td><img src="images/menu/apps/nachos.jpg"></td>
-                        </tr>
-                    <tr>
-                        <th></th>
-                        <th>Main dishes</th>
-                        <th></th>
-                    </tr>
-                        <tr>
-                            <td>Fried Chicken</td>
-                            <td>10.99</td>
-                            <td><img src="images/menu/mains/fried.jpg"></td>
-                        </tr>
-                        <tr>
-                            <td>Cheeseburger</td>
-                            <td>8.99/10.99 with bacon</td>
-                            <td><img src="images/menu/mains/CHEESEBURGER.jpg"></td>
-                        </tr>
-                    <tr>
-                        <th></th>
-                        <th>Desserts</th>
-                        <th></th>
-                    </tr>
-                        <tr>
-                            <td>Cheesecake</td>
-                            <td>7.99</td>
-                            <td><img src="images/menu/desserts/cheesecake.jpg"></td>
-                        </tr>
-                        <tr>
-                         <td>Milkshake</td>
-                            <td>4.99 sm/7.99 lg</td>
-                            <td><img src="images/menu/desserts/milkshake.png"></td>
-                        </tr>
-                    <tr>
-                        <th>Drinks</th>
-                    </tr>
-                        <tr>
-                            <td>Softdrink</td>
-                            <td>2.99 sm/3.99 lg</td>
-                            <td><img src="images/menu/beverages/soda.jpg"></td>
-                        </tr>
-                        <tr>
-                            <td>Beer</td>
-                            <td>7.99 bottle/13.99 24oz can</td>
-                            <td><img src="images/menu/beverages/beer.jpeg"></td>
-                        </tr>
-                </table>
+                <div class="row">
+                    <div class="column">
+                        <!--appetizers table with row hover effects-->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="head-left"></th>
+                                    <th>Appetizers</th>
+                                    <th class="head-right"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mozzarella Sticks</td>
+                                    <td>6.99</td>
+                                    <td><img src="images/menu/apps/mozz.jpg"></td>                        
+                                </tr>
+                                <tr>
+                                    <td class="bot-left">Nachos</td>
+                                    <td>5.99</td>
+                                    <td class="bot-right"><img src="images/menu/apps/nachos.jpg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--main dishes table with row hover effects-->
+                    <div class="column">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="head-left"></th>
+                                    <th>Main dishes</th>
+                                    <th class="head-right"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fried Chicken</td>
+                                    <td>10.99</td>
+                                    <td><img src="images/menu/mains/fried.jpg"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bot-left">Cheeseburger</td>
+                                    <td>8.99/10.99 with bacon</td>
+                                    <td class="bot-right"><img src="images/menu/mains/CHEESEBURGER.jpg"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--desserts table with row hover effects-->
+                <div class="row">
+                    <div class="column">
+                        <table>
+                            <thead> 
+                                <tr>
+                                    <th class="head-left"></th>
+                                    <th>Desserts</th>
+                                    <th class="head-right"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>Cheesecake</td>
+                                        <td>7.99</td>
+                                        <td><img src="images/menu/desserts/cheesecake.jpg"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bot-left">Milkshake</td>
+                                        <td>4.99 sm/7.99 lg</td>
+                                        <td class="bot-right"><img src="images/menu/desserts/milkshake.png"></td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--drinks table with row hover effects-->
+                    <div class="column">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="head-left"></th>
+                                    <th>Drinks</th>
+                                    <th class="head-right"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Softdrink</td>
+                                    <td>2.99 sm/3.99 lg</td>
+                                    <td><img src="images/menu/beverages/soda.jpg"></td>
+                                </tr>
+                                <tr>
+                                    <td class="bot-left">Beer</td>
+                                    <td>7.99 bottle/13.99 24oz can</td>
+                                    <td class="bot-right"><img src="images/menu/beverages/beer.jpeg"></td>
+                                </tr>    
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </section>
         </main>
-        <footer>
-        </body><br>Website: &#169;2025 Matthew Arney. All images are &#169 their respective owners
-        </footer>
 
+        <!--footer with copyright info-->
+        <footer>
+        </body><br>Website: &#169;2025 Matthew Arney. All images are &#169; their respective owners
+        </footer>
     </body>
 
 </html>

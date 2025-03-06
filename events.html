@@ -4,13 +4,27 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Community Concert Center Events Page</title>
+        <!--google fonts linking and styling-->
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?&family=Mulish&family=Exo+2:ital,wght@0,100..900;1,100..900" rel="stylesheet">
+        <style>
+            header {
+                font-family: Mulish;
+            }
+
+            .welcome {
+                font-family: "Exo 2";
+            }
+        </style>
     </head>
     <body>
         <header>
             <!--Header with welcome message and logo and responsive navbar-->
             <a href="index.html"><img class="headerlogo" src="images/logo/330x330_trans.png"></a>
             <h1>Events Happening at Community Concert Center</h1>
+            <!--Navigation bar with responsive resizing based on screensize-->
             <nav>
                 <!--check box and label for menu toggling-->
                 <input type="checkbox" id="menu-toggle">
@@ -25,15 +39,16 @@
             </nav>
         </header>
         <main>
-            <section class="hero">
-                <img src="images/hero/rawImage.jpg" alt="Wide image of a concert from within the audience">
-            </section>
+            <!--welcome section-->
             <section class="welcome">
                 <p>This page contains information about all of the confirmed events planned here at the Community Concert Center.</p>
             </section>
+            <!--events section with responsively designed grid for displaying events-->
             <section class="events">
                 <h2>2025 Events Calendar</h2>
+                <!--layout grid for events "tiles"-->
                 <div class="event-grid">
+                    <!--event articles that are layed out as tiles with styling-->
                     <article class="event" id="hip-hop">
                         <img src="images/events/rap.jpeg" alt="Hip-hop concert">
                         <h3>2/28: Rap Concert</h3>
@@ -68,8 +83,10 @@
                 <p class="notification">*Check back regularly for new events and changes to already scheduled events as time progresses*</p>
             </section>
         </main>
+
+        <!--footer with copyright info-->
         <footer>
-        </body><br>Website: &#169;2025 Matthew Arney. All images are &#169 their respective owners
+        </body><br>Website: &#169;2025 Matthew Arney. All images are &#169; their respective owners
         </footer>   
     </body>
 

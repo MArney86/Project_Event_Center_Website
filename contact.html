@@ -3,14 +3,32 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About the Community Concert Center</title>
+        <title>Contact Page of Community Concert Center</title>
         <link rel="stylesheet" href="css/styles.css">
+         <!--google fonts linking and styling-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?&family=Mulish&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Great+Vibes" rel="stylesheet">
+        <style>
+            header {
+                font-family: Mulish;
+            }
+
+            .about {
+                font-family: "Exo 2";
+            }
+
+            .hero-text {
+                font-family: "Great Vibes";
+            }
+        </style>
     </head>
     <body>
         <header>
             <!--Header with welcome message and logo and responsive navbar-->
             <a href="index.html"><img class="headerlogo" src="images/logo/330x330_trans.png"></a>
             <h1>Contact Us at Community Concert Center</h1>
+            <!--Navigation bar with responsive resizing based on screensize-->
             <nav>
                 <!--check box and label for menu toggling-->
                 <input type="checkbox" id="menu-toggle">
@@ -25,25 +43,57 @@
             </nav>
         </header>
         <main>
+            <!--hero banner section-->
             <section class="hero">
                 <img src="images/hero/rawImage.jpg" alt="Wide image of a concert from within the audience">
+                <div class="hero-text">Your Concert Center for 30 years!</div>
             </section>
-            <section>
-                Have any questions of comments for us? Contact us using the form below
+            
+            <!--about section for the page-->
+            <section class="about">
+                Have any questions of comments for us? Contact us using the form below or giving us a call at: 832-555-5555
             </section>
-            <section>
-                <form>
-                    <label for="contact-name" required>Your name:</label>
-                    <input type="text" id="contact-name"><br>
-                    <label for="contact-email">Email for possible responses:</label>
-                    <input type="email" id="contact-email"><br>
-                    <label for="contact-message">Your question or comment:</label><br>
-                    <textarea id="contact-message" rows="6" cols="50">Please enter your question or comment here</textarea>
-                </form>
+
+            <!--Comment form-->
+            <section class="comment-form">
+                <!--div container for contact form styling with floats and flex-->
+                <div class="form-deco">
+                    <form action="http://127.0.0.1:5000" method="post" autocomplete="on">
+
+                        <!--input for the commenters first name (required)-->
+                        <div class="contact-row">
+                            <label for="contact-fname" class="col-25">First Name:</label>
+                            <input type="text" id="contact-fname" class="col-75" required>
+                        </div>
+
+                        <!--input for the commenters last name (optional)-->
+                        <div class="contact-row">
+                            <label for="contact-lname" class="col-25">Last Name:</label>
+                            <input type="text" id="contact-lname" class="col-75">
+                        </div>
+
+                        <!--input for the commenters email (required)-->
+                        <div class="contact-row">
+                            <label for="contact-email" class="col-25">Email for possible responses:</label>
+                            <input type="email" id="contact-email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" class="col-75" required>   
+                        </div>
+
+                        <!--textarea input for commenter's comments-->
+                        <div class="contact-row">
+                            <label for="contact-message" class="col-25">Your question or comment:</label><br>
+                            <textarea id="contact-message" rows="6" cols="50" class="col-75">Please enter your question or comment here</textarea>
+                        </div>
+
+                        <!--submit button for form-->
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </section>
         </main>
+
+        <!--footer with copyright info-->
         <footer>
-        </body><br>Website: &#169;2025 Matthew Arney. All images are &#169 their respective owners
+        </body><br>Website: &#169;2025 Matthew Arney. All images are &#169; their respective owners
         </footer>   
     </body>
 
