@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Community Concert Center Homepage</title>
+        <title>About Community Concert Center</title>
         <link rel="icon" type="image/png" href="images/logo/330x330_trans.png">
-        <!--google fonts linking and styling-->
         <link rel="stylesheet" href="css/styles.css">
+         <!--google fonts linking and styling-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?&family=Mulish&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Great+Vibes" rel="stylesheet">
@@ -23,6 +23,10 @@
                 font-family: "Exo 2";
             }
 
+            .location {
+                font-family: "Exo 2";
+            }
+
             .hero-text {
                 font-family: "Great Vibes";
             }
@@ -32,8 +36,7 @@
         <header>
             <!--Header with welcome message and logo and responsive navbar-->
             <a href="index.html"><img class="headerlogo" src="images/logo/330x330_trans.png" alt="Community Concert Center Logo"></a>
-            <h1>Welcome to the Community Concert Center Homepage</h1>
-            
+            <h1>About Community Concert Center</h1>
             <!--Navigation bar with responsive resizing based on screensize-->
             <nav>
                 <!--check box and label for menu toggling-->
@@ -58,53 +61,46 @@
             <!--welcome section-->
             <section class="welcome">
                 <h2>Welcome to the Community Concert Center</h2>
-                Where everlasting memories are made. Your local concert and live-event venue with a focus on the community and high-quality experiences.
+                <p>Where everlasting memories are made. Your local concert and live-event venue with a focus on the community and high-quality experiences.</p>
             </section>
             
-            <!--about section-->
+            <!--about section with history and mission-->
             <section class="about">
-                <h3>About Us:</h3>
-                <p>We here at the Community Concert Center pride ourselves on bringing high-quality entertinment to the local community.</p>
-                <p>Originally opened in 1995, and purchased by the local government in 2008, we pride ourselves on attention to detail and quality customer service to keep our promise of giving wonder experiences and memories to the community of neighbors we serve and the multitudes of guests who visit us.</p>
+                <h2>Our History & Mission</h2>
+                <p>We here at the Community Concert Center pride ourselves on bringing high-quality entertainment to the local community.</p>
+                <p>Originally opened in 1995, and purchased by the local government in 2008, we pride ourselves on attention to detail and quality customer service to keep our promise of giving wonderful experiences and memories to the community of neighbors we serve and the multitudes of guests who visit us.</p>
+                <p>Our mission is to provide a premier entertainment venue that enriches the cultural life of our community while maintaining the highest standards of customer service and venue excellence.</p>
+            </section>
+
+            <!--team section-->
+            <section class="about">
+                <h2>Our Team</h2>
+                <p>Our dedicated team of professionals works tirelessly to ensure every event is a memorable experience. From our event coordinators to our technical crew, customer service staff, and venue management, each member is committed to excellence in serving our community.</p>
+            </section>
+
+            <!--location and hours information-->
+            <section class="location">
+                <h2>Visit Us</h2>
+                <h3>Our Address:</h3>
+                <p>Community Concert Center</p>
+                <p>331 United Lueva Circle</p>
+                <p>Houston, TX 77060</p>
+                <h3>Hours of Operation (office):</h3>
+                <p>Mon - Fri</p>
+                <p>10am-7pm</p>
+                <!--mockup google maps image of location of concert center-->
+                <img src="images/location/location.png" alt="Map showing location of Community Concert Center">
+            </section>
+
+            <!--call to action section-->
+            <section class="about">
+                <h3>Plan Your Visit</h3>
                 <p>Check out our <a href="events.html">events</a> page for upcoming concerts<br>
                 or our <a href="menu.html">menu</a> page if you're planning a visit.</p>
-            </section>
-            
-            <!--featured events section -->
-            <section class="events">
-                <h2>Featured Events</h2>
-                <!--layout grid for featured events section-->
-                <div class="event-grid">
-                    
-                    <!--events as articles-->
-                    <article class="feat-event" id="pop">
-                        <a href="events.html#pop">
-                            <img src="images/events/pop-concert.jpg" alt="Pop Concert">
-                            <h3>3/19: Pop Concert</h3>
-                            <p>Join us for a night of raucous Pop music...</p>
-                        </a>
-                    </article>
-                    
-                    <article class="feat-event" id="bluegrass">
-                        <a href="events.html#bluegrass">
-                            <img src="images/events/bluegrass.jpg" alt="Bluegrass festival">
-                            <h3>3/8-9: State Bluegrass Festival</h3>
-                            <p>Bluegrass enthusiasts from all around...</p>
-                        </a>
-                    </article>
-                    
-                    <article class="feat-event" id="orch-2">
-                        <a href="events.html#orch-2">
-                            <img src="images/events/orchestra.jpg" alt="Orchestra">
-                            <h3>3/21: Symphony Orchestra</h3>
-                            <p>Enjoy a night of Classical Music with...</p>
-                        </a>
-                    </article>
-                </div>
+                <p>For inquiries or bookings, please visit our <a href="contact.html">contact</a> page.</p>
             </section>
         </main>
-
-        <!--footer with copyright info-->
+        <!--footer with copyright info and social media links-->
         <footer>
             <p>Follow us on social media: 
                 <a href="https://facebook.com" target="_blank">Facebook</a> | 
